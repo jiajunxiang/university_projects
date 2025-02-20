@@ -1,0 +1,15 @@
+students{
+	display: table;
+	border-collapse: collapse;
+	margin-top: 20px;
+	width: auto;
+}
+student{
+	display: table-row;
+	line-height: 28px;
+}
+sno,name,sex,address,nation,interest{
+	display: table-cell;
+	border: 1px solid;
+	padding: 6px;
+}

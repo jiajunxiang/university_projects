@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="ie-stand">
+<title>JavaScript编程</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript">
+	var bt;
+	function makelarge()
+	{
+		bt=document.getElementById("changeimg");
+		bt.height=bt.height+10;
+		bt.width=bt.width+10;
+	}
+	function makesmall()
+	{
+		bt=document.getElementById("changeimg");
+		bt.height=bt.height-10;
+		bt.width=bt.width-10;
+	}
+</script>
+<style>
+	.js
+	{
+		margin-left: 40px;
+		height: 20%;
+		width:15%;
+	}
+	.zj
+	{
+		margin-left: 20px;
+		height: 20%;
+		width:15%;
+	}
+</style>
+</head>
+    
+<body>
+<div id="box">
+     <div id="top"><p><b>Web技术基础实验</b></p></div>
+     <div id="menu">
+        <ul class="stylemenu">
+           <li><a href="index.html">实验一</a></li>
+           <li><a href="sy2.html">实验二</a></li>
+           <li><a href="sy3.html">实验三</a></li>
+           <li><a href="sy4.html">实验四</a></li>
+           <li><a href="sy5.html">实验五</a></li>
+           <li><a href="sy6.html">实验六</a></li>
+           <li><a href="sy7.html">实验七</a></li>
+           <li><a href="sy8.html">实验八</a></li>
+        </ul>
+     </div> 
+     <div id="nav">    	 
+    	 <h1>JS应用</h1>  		
+    	  <ul class="left">
+    	 	<li><a href="sy3.html">图像交换</a></li><br />
+    	 	<li><a href="sy3_2.html">网页秒表</a></li><br />
+    	 	<li><a href="sy3_3.html">表格编辑</a></li>
+    	 </ul>	
+     </div>
+     <div id="main">    
+    		 <h3>图像交换</h3>
+            	<img src="images/forest1.jpg"	height="300" 
+            		onMouseOver="this.src='images/forest2.jpg'"
+            		onmouseout="this.src='images/forest1.jpg'"
+            		id="changeimg"
+                >
+                <p><input type="button" onclick="makelarge()" value="增大" class="zj"></input>
+                	<input type="button" onclick="makesmall()" value="缩小" class="js"></input>
+                </p>         
+    </div>
+   <div id="footer">
+     2017-2018-1&copy;&nbsp;&nbsp;计算机科学与技术2017级3班&nbsp;&nbsp;201709070315&nbsp;&nbsp;贾俊祥
+     </div>        
+</div>
+</body>
+</html>

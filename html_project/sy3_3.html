@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="ie-stand">
+<title>JavaScript编程</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script>
+    var change=function change(){
+	var row=document.getElementById("row").value;
+	row=parseInt(row);
+	if(isNaN(row)){
+		alert("输入数据非法，请重新输入！");
+		return false;
+	}
+	var col=document.getElementById("col").value;
+	col=parseInt(col);
+	if(isNaN(col)){
+		alert("输入数据非法，请重新输入！");
+		return false;
+	}
+	var tab=document.getElementById("tab");
+	if(row>tab.rows.length||col>tab.rows[0].cells.length){
+		alert("要修改的单元格不在表格范围内！");
+		return false;
+	}
+	tab.rows[row-1].cells[col-1].innerHTML =document.getElementById("updatetext").value;
+     }
+</script>
+
+</head>
+    
+<body>
+<div id="box">
+     <div id="top"><p><b>Web技术基础实验</b></p></div>
+     <div id="menu">
+        <ul class="stylemenu">
+           <li><a href="index.html">实验一</a></li>
+           <li><a href="sy2.html">实验二</a></li>
+           <li><a href="sy3.html">实验三</a></li>
+           <li><a href="sy4.html">实验四</a></li>
+           <li><a href="sy5.html">实验五</a></li>
+           <li><a href="sy6.html">实验六</a></li>
+           <li><a href="sy7.html">实验七</a></li>
+           <li><a href="sy8.html">实验八</a></li>
+        </ul>
+     </div> 
+     <div id="nav">    	 
+    	  <h1>JS应用</h1>  		
+    	  <ul class="left">
+    	 	<li><a href="sy3.html">图像交换</a></li><br />
+    	 	<li><a href="sy3_2.html">网页秒表</a></li><br />
+    	 	<li><a href="sy3_3.html">表格编辑</a></li>
+    	 </ul>		
+     </div>
+     <div id="main">     
+    		 <h3>表格编辑</h3>
+             <p>改变第&nbsp;<input  type="text" id="row" size="6" value="1"/>&nbsp;行&nbsp;&nbsp;
+                    第&nbsp;<input  type="text" id="col" size="6" value="1"/>&nbsp;列的值为：
+                    <input  type="text" id="updatetext" size="6" value="1"/>&nbsp;&nbsp;
+                     <input  type="button" id="bt" size="6" value="改变" onclick="change()"/>
+             </p>
+             <table id="tab" border="1">
+               <caption>实验三表格</caption>
+                 <tr>
+                     <td>疯狂Java讲义</td>
+                     <td>轻量级Java&nbsp;&nbsp;EE企业应用实战</td>
+                 </tr>
+                <tr>
+                     <td>疯狂Java讲义</td>
+                     <td>经典Java&nbsp;&nbsp;EE企业应用实战</td>
+                 </tr>
+                 <tr>
+                     <td>疯狂Xml讲义</td>
+                     <td>疯狂Android讲义</td>
+                 </tr>
+            </table>         
+   </div>
+   <div id="footer">
+     2017-2018-1&copy;&nbsp;&nbsp;计算机科学与技术2017级3班&nbsp;&nbsp;201709070315&nbsp;&nbsp;贾俊祥
+     </div>        
+</div>
+</body>
+</html>

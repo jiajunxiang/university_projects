@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+#box {	
+	width:800px;
+	margin:auto;
+	
+}
+#top{
+	height:100px;
+	
+	float: left;
+	width: 800px;
+}
+#top p{
+	text-align: center;
+	padding-top: 9px;	
+	
+	line-height: 20px;
+	font-size: 32px;
+}
+
+#nav{
+	float:left;
+	width:202px;
+	height:500px;
+	
+}
+#nav h1{
+	text-align: center;
+	margin-top: 30px;
+	 margin-left:-8px;
+}
+.left{
+	list-style-type:none;
+	margin-top: 48px;
+}
+.left li{	
+	display: inline;	
+	
+	padding-left: 28px;
+	line-height: 2.5em;
+}
+#main{
+	float:left;
+	
+	width:582px;
+	height:484px;
+	padding-left:12px;
+	padding-top:12px;
+	padding-right:4px;
+	padding-bottom:4px;
+	overflow:auto;
+	
+}
+#main h3{
+	text-align:center;
+}
+#content{
+	
+	background-repeat:repeat;
+	text-indent:2em;
+	line-height:40px;
+	font-size:18px;
+	font-family:"楷体","Arial";
+	float:left;
+}
+#right{
+	margin-top: 30px;
+	margin-left: 120px;
+}
+#footer{
+	text-align:center;
+	height:28px;
+	clear:both;
+	padding-top:8px;
+}
+  /* 未被访问的链接     */
+a:link{  
+	 text-decoration:none;
+	  color:#000;
+} 
+ /* 已被访问过的链接   蓝色 */
+a:visited{ 
+	text-decoration:none;
+	 color: darkgray;
+	} 
+/* 鼠标悬浮在上的链接 蓝色 */
+a:hover{   
+	text-decoration:none;  
+	 color: darkgray;
+	}  
+/* 鼠标点中激活链接   蓝色 */
+a:active {
+	color: #7F7D7E;
+	}  

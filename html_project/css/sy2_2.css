@@ -1,0 +1,45 @@
+﻿.p1{
+	font-family:宋体;
+	font-size:12pt;
+	color:#0011aa;
+	text-align:left;
+	text-indent:2em;
+	line-height:1.6;
+	}
+.xt{
+	font-style:italic;
+}
+
+.xhx{
+	text-decoration:underline;
+}
+#content{
+	background-image:url(../images/forest1.jpg);
+	background-repeat:no-repeat;
+	background-position:left;
+	background-position:top;
+	background-attachment:inherit;	
+	width:560px;
+	height:450px;
+	overflow:auto;
+}
+.pa{
+	color:#000000;
+	}
+.tab{	
+	border-top:double  blue 2mm;
+	border-bottom:double  blue;
+	border-bottom-width: 2mm;
+	border-left: dotted red 1mm;
+	border-right: dotted red 1mm;
+	padding-top: 2mm;
+	padding-bottom: 2mm;
+	padding-left: 1mm;
+	padding-right: 1mm;
+	border-collapse:collapse;
+}
+.tdd{
+	border:solid black 1px;
+	
+}
+

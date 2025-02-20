@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="css/sy5.css"?>
+<students>
+	<student>
+		<sno>20040112</sno>
+		<name>张三丰</name>
+		<sex>男</sex>
+		<nation>汉族</nation>
+		<address>山东临沂</address>
+		<interest>英语</interest>
+	</student>
+	<student>
+		<sno>20040201</sno>
+		<name>李四</name>
+		<sex>女</sex>
+		<nation>白族</nation>
+		<address>云南大理</address>
+		<interest>中文</interest>
+	</student>
+	<student>
+		<sno>20031514</sno>
+		<name>王五</name>
+		<sex>女</sex>
+		<nation>汉族</nation>
+		<address>河南郑州</address>
+		<interest>计算机</interest>
+	</student>
+	<student>
+		<sno>20031514</sno>
+		<name>赵六</name>
+		<sex>女</sex>
+		<nation>汉族</nation>
+		<address>山东济南</address>
+		<interest>计算机</interest>
+	</student>
+</students>

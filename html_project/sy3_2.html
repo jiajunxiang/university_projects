@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="ie-stand">
+<title>JavaScript编程</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<style>
+	.js
+	{
+		margin-left: 40px;
+		height: 20%;
+		width:15%;
+	}
+	.zj
+	{
+		margin-left: 12px;
+		height: 20%;
+		width:15%;
+	}
+</style>
+<script type="text/javascript">
+	var bt;
+	function now()
+	{
+		var n=new Date();
+		 document.getElementById("nowtime").value=n.toLocaleTimeString();
+	}
+	function startTime()
+	{
+		//bt=document.getElementById("start");
+		bt=setInterval(now,1000);
+		//alert("123');
+	}
+	function stop()
+	{
+		if(bt!=null){
+		clearInterval(bt);
+		}
+	}
+</script>
+</head>
+    
+<body>
+<div id="box">
+     <div id="top"><p><b>Web技术基础实验</b></p></div>
+     <div id="menu">
+        <ul class="stylemenu">
+           <li><a href="index.html">实验一</a></li>
+           <li><a href="sy2.html">实验二</a></li>
+           <li><a href="sy3.html">实验三</a></li>
+           <li><a href="sy4.html">实验四</a></li>
+           <li><a href="sy5.html">实验五</a></li>
+           <li><a href="sy6.html">实验六</a></li>
+           <li><a href="sy7.html">实验七</a></li>
+           <li><a href="sy8.html">实验八</a></li>
+        </ul>
+     </div> 
+     <div id="nav">    	 
+    	 <h1>JS应用</h1>  		
+    	  <ul class="left">
+    	 	<li><a href="sy3.html">图像交换</a></li><br />
+    	 	<li><a href="sy3_2.html">网页秒表</a></li><br />
+    	 	<li><a href="sy3_3.html">表格编辑</a></li>
+    	 </ul>	
+     </div>
+     <div id="main">    
+    		 <h3>网页秒表</h3>
+            	<p>当前日期：&nbsp;<a id="nowdate"></a></p>
+            	<p>
+            	      当前时间：<input type="text" id="nowtime"/>
+            	</p>
+            	<p>
+            		<input type="button" class="zj" id="start" value="开始计时" onclick="startTime()" />
+            		<input type="button" class="js" id="stop" value="结束计时" onclick="stop()" />
+            	</p>
+            	<script type="text/javascript">
+	                var dt=new Date();
+	                document.getElementById("nowdate").innerHTML=dt.toLocaleDateString();
+	                document.getElementById("nowtime").value=dt.toLocaleTimeString();
+               </script>         
+   </div>
+   <div id="footer">
+     2017-2018-1&copy;&nbsp;&nbsp;计算机科学与技术2017级3班&nbsp;&nbsp;201709070315&nbsp;&nbsp;贾俊祥
+     </div>        
+</div>
+</body>
+</html>

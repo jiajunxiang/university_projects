@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="ie-stand">
+<title>表单验证</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<style>
+	.left1 li{
+		display: inline;		
+		padding-left: 16px;
+		line-height: 2.5em;
+	}	
+</style>
+<script language="JavaScript" src="js/shiyan4.js"></script>
+</head>
+    
+<body>
+<div id="box">
+     <div id="top"><p><b>Web技术基础实验</b></p></div>
+     <div id="menu">
+        <ul class="stylemenu">
+           <li><a href="index.html">实验一</a></li>
+           <li><a href="sy2.html">实验二</a></li>
+           <li><a href="sy3.html">实验三</a></li>
+           <li><a href="sy4.html">实验四</a></li>
+           <li><a href="sy5.html">实验五</a></li>
+           <li><a href="sy6.html">实验六</a></li>
+           <li><a href="sy7.html">实验七</a></li>
+           <li><a href="sy8.html">实验八</a></li>
+        </ul>
+     </div> 
+     <div id="nav">    	     	 
+    		<h1>JS验证</h1>
+    		 <ul class="left1">
+    	 	   <li><a href="sy4.html">JS客户端验证</a></li>   	 	  
+    	   </ul>
+     </div>
+     <div id="main">
+    		 <h3>JavaScript客户端验证</h3>
+            	<form id="myForm" action="" onsubmit="return chkAll();">
+      <table align="center" cellpadding="6" width="580">
+        <caption>
+        用户注册信息
+        </caption>
+        <tr>
+          <td width="80" align="right"><label for="username">用户名：</label></td>
+          <td width="140"><input name="text" type="text" id="username" size="20" onblur="chkUsername();" /></td>
+          <td><div id="usernamePrompt">*以英文开头，4-16个英文、数字或下划线字符！</div></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="email">电子邮箱：</label></td>
+          <td><input type="text" name="email" id="email" size="20" onBlur="chkEmail();"></td>
+          <td><div id="emailPrompt">*</div></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="password">密码：</label></td>
+          <td><input name="password" type="password" id="password" size="20" onBlur="chkPassword();" /></td>
+          <td><div id="passwordPrompt">*英文字母、数字、下画线，且长度在6-24个字符！</div></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="password2">重复密码：</label></td>
+          <td><input name="password2" type="password" id="password2" size="20" onblur="chkPassword2();" /></td>
+          <td><div id="password2Prompt">*</div></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="idnum">身份证号码：</label></td>
+          <td><input type="text" name="idnum" id="idnum" size="20" onblur="chkIdnum();"/></td>
+          <td><div id="idnumPrompt">&nbsp;</div></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="phonenum">联系电话：</label></td>
+          <td><input type="text" name="phonenum" id="phonenum" size="20" onblur="chkPhonenum();"/></td>
+          <td><div id="phonenumPrompt">&nbsp;</div></td>
+        </tr>
+        <tr>
+          <td align="right">&nbsp;</td>
+          <td align="center"><input name="submit" type="submit" value="提交" />
+            &nbsp;&nbsp;
+            <input name="reset" type="reset" value="重置" /></td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </form>      
+   </div>
+   <div id="footer">
+     2017-2018-1&copy;&nbsp;&nbsp;计算机科学与技术2017级3班&nbsp;&nbsp;201709070315&nbsp;&nbsp;贾俊祥
+     </div>        
+</div>
+</body>
+</html>

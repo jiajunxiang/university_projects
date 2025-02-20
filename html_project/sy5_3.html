@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="ie-stand">
+<title>XML文档操作</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<style>
+   #nav li{
+	   margin-left:-20px;
+   }
+</style>
+</head>
+    
+<body>
+<div id="box">
+     <div id="top"><p><b>Web技术基础实验</b></p></div>
+     <div id="menu">
+        <ul class="stylemenu">
+           <li><a href="index.html">实验一</a></li>
+           <li><a href="sy2.html">实验二</a></li>
+           <li><a href="sy3.html">实验三</a></li>
+           <li><a href="sy4.html">实验四</a></li>
+           <li><a href="sy5.html">实验五</a></li>
+           <li><a href="sy6.html">实验六</a></li>
+           <li><a href="sy7.html">实验七</a></li>
+           <li><a href="sy8.html">实验八</a></li>
+        </ul>
+     </div> 
+     <div id="nav">    	 
+    	 <h1>XML</h1>  		
+    	  <ul class="left">
+    	 	<li><a href="sy5.html">CSS格式化XML</a></li><br />
+    	 	<li><a href="sy5_2.html">XSLT转化XML</a></li><br />
+    	 	<li><a href="sy5_3.html">DOM解析XML</a></li>
+    	 </ul>	
+     </div>
+     <div id="main">    
+    		 <h3>DOM解析XML</h3>
+            	<table align="left" border="1" cellspacing="3" cellpadding="6">
+            	   <caption>使用DOM显示XML文档</caption>
+            		 <tr>
+         				<td>学号</td>
+         				<td>姓名</td>
+         				<td>性别</td>
+         				<td>民族</td>
+         				<td>籍贯</td>
+         				<td>专业</td>
+      				</tr>
+      				<script type="text/javascript">
+      					var mode=true;
+      					var xd;
+      					try
+      					{
+      						xd=new ActiveXObject("Microsoft.xmldom");
+      					}
+      					catch(e)
+      					{
+      						//TODO handle the exception
+      						mode=false;
+      						xd=document.implementation.createDocument("","",null);
+      					}
+      						xd.async=false;
+      						xd.load("sy5_3.xml");
+      						var root=xd.getElementsByTagName("student");
+      						for (var i=0;i<root.length;i++) 
+      						{  
+      							document.write("<tr>");
+      							var childNode=root[i].childNodes;
+      							for (var j=0;j<childNode.length;j++) 
+      							{
+      								if(mode)
+      								{
+      									document.write("<td>"+childNode[j].text+"</td>");
+      								}
+      								else
+      								{
+      									if(childNode[j].nodeType==1)
+      									{
+      									  document.write("<td>"+childNode[j].textContent+"</td>");
+      									}
+      								}
+      						    }
+      							document.write("</tr>");
+      						}     					      					
+      				</script>
+            	</table>
+     </div>
+   <div id="footer">
+     2017-2018-1&copy;&nbsp;&nbsp;计算机科学与技术2017级3班&nbsp;&nbsp;201709070315&nbsp;&nbsp;贾俊祥
+     </div>        
+</div>
+</body>
+</html>
