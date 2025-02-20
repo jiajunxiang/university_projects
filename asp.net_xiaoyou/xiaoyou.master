@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="xiaoyou.master.cs" Inherits="xiaoyou" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/xiaoyou.css" rel="stylesheet" type="text/css" />
+   
+    <style type="text/css">
+        .style1
+        {
+            font-family: 华文楷体;
+            font-size: x-large;
+            text-align: center;
+          
+        }
+        .style2
+        {
+            text-align: center;
+            position:absolute;
+            bottom:0;
+            width:100%;
+            height:100px;
+            line-height:100px;
+            text-align:center;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div style="position:absolute; width:100%; height:100%; z-index:-1; left:0; top:0;">      
+    <img src="images/d.jpg" height="100%" width="100%" style="left:0; top:0;">      
+     </div>
+      <div id="header">
+          <h1 class="style1">
+      校友信息查询系统</h1>
+&nbsp;</div><br />
+       <div  align="left">
+         <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">       
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
+             <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+             </asp:SiteMapPath>
+       </asp:ContentPlaceHolder>
+       </div><br />
+      <div id="content" align="center">
+    
+       <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">       
+       </asp:ContentPlaceHolder>
+     
+      
+       </div>
+       
+         
+      
+      <div id="footer" class="style2" align="center">
+        
+           <p>Copyright&copy;贾俊祥.All Rights Reserved.联系方式:15866933609</p> 
+         
+       </div>
+      </div>
+    </form>
+
+</body>
+</html>

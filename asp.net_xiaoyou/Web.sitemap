@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Home2.aspx" title="管理员用户界面" >
+    <siteMapNode url="Classmanger.aspx" title="校友管理界面"  >
+      <siteMapNode url="Classinsert.aspx" title="校友添加"></siteMapNode>
+      <siteMapNode url="Classmodify.aspx" title="校友更新"></siteMapNode>
+      <siteMapNode url="Classdelete.aspx" title="校友删除"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="Usermanger.aspx" title="用户管理">
+      
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
